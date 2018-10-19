@@ -2,8 +2,8 @@
 
 ## Todo List
 
-- Router
-- Views
+- ~~Router~~
+- ~~Views~~
 - Blade
 - Encryption
 - cURL
