@@ -5,10 +5,10 @@
 - ~~Router~~
 - ~~Views~~
 - Blade
-- Encryption
-- cURL
+- ~~Encryption~~
+- ~~cURL~~
 - PDO Database wrapper
-- Session
+- ~~Session~~
 - Cookie
 - Mail => PHPMailer/SwiftMailer
 - Validation
