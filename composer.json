@@ -1,0 +1,14 @@
+{
+    "name": "supergrecko/tiny-framework",
+    "authors": [
+        {
+            "name": "SuperGrecko",
+            "email": "business@supergrecko.com"
+        }
+    ],
+    "autoload": {
+    	"psr-4": {
+    		"App\\": "src/"
+    	}
+    }
+}
