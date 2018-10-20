@@ -7,7 +7,7 @@
 - Blade
 - ~~Encryption~~
 - ~~cURL~~
-- PDO Database wrapper
+- ~~PDO Database wrapper~~
 - ~~Session~~
 - Cookie
 - Mail => PHPMailer/SwiftMailer
