@@ -1,39 +1,20 @@
 <?php
-
+/*
++-------------------------------------------------------------------------------
+| Require composer's autoloader. 
++-------------------------------------------------------------------------------
+|
+| Nothing special here, just grabbing the autoloader..
+|
+*/
 require __DIR__ . "/vendor/autoload.php";
 
-use App\Router\Router;
-
-use App\Config;
-
-use App\Session\Session;
-
 /*
-|-------------------------------------------------------------------------------
-| Initialize the router and session
-|-------------------------------------------------------------------------------
-| Here we initialize the router so we can get our different views and pages.
-| We also start our session.
-*/
-Router::init();
-Session::init();
-
-
-/*
-|-------------------------------------------------------------------------------
-| Define our routes
-|-------------------------------------------------------------------------------
-| Let's define some routes for our beautiful webpage
++-------------------------------------------------------------------------------
+| Initialize the framework using our bootstrapper.
++-------------------------------------------------------------------------------
 |
-| We can define the callbacks in src/Controller/ViewController.
+| We require our bootstrapper so your glorious app will start running
+|
 */
-Router::get('/', 'ViewController@home', 'home');
-
-
-/*
-|-------------------------------------------------------------------------------
-| Run our router
-|-------------------------------------------------------------------------------
-| Running our router so everything is good to go.
-*/
-Router::run();
+$app = require $_SERVER['DOCUMENT_ROOT'] . "/bootstrap/app.php";

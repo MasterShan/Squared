@@ -31,6 +31,7 @@ class Encryption
     public function __construct()
     {
         $this->cipher = Config::CIPHER;
+        $this->iv = 'qYALI7wikL1WdXkD';
     }
     
     /**

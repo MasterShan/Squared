@@ -70,11 +70,7 @@ class Route
      */
     public function call()
     {
-        if(is_string($this->callback)) {
-            
-        }else{
-            return call_user_func_array($this->callback, $this->params);
-        }
+        return call_user_func_array($this->callback, $this->params);
     }
     
 }
