@@ -4,11 +4,12 @@
 
 - ~~Router~~
 - ~~Views~~
-- Blade
+- ~~Twig~~
 - ~~Encryption~~
 - ~~cURL~~
 - ~~PDO Database wrapper~~
 - ~~Session~~
+- ~~Redirect~~
 - Cookie
 - Mail => PHPMailer/SwiftMailer
 - Validation
