@@ -11,11 +11,7 @@ class ViewController extends Controller
      * 
      * These are the callback functions to the router
      */
-    public function home()
-    {
-        $this->view('header');
-        $this->view('home');
-    }
+    
     
 }
 

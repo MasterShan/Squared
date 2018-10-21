@@ -77,7 +77,7 @@ class Encryption
         if(is_null($method)) {
             throw new EncryptionException("Method cannot be null");
         }
-        if(!in_array(openssl_get_cipher_methods(true))) {
+        if(!in_array($method, openssl_get_cipher_methods(true))) {
             throw new EncryptionException("Invalid method");
         }
         return $method;
