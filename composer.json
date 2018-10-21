@@ -11,12 +11,12 @@
     		"App\\": "src/"
     	},
     	"files": [
-    	    "helpers.php"
+    	    "helpers/view.php"
     	]
     },
     "require": {
         "svyatov/curlwrapper": "1.3",
-        "jenssegers/blade": "^1.1",
-        "swiftmailer/swiftmailer": "^6.1"
+        "swiftmailer/swiftmailer": "^6.1",
+        "twig/twig": "^2.0"
     }
 }

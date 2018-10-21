@@ -26,11 +26,45 @@ class Session
     protected $content;
     
     /**
+     * If session is initialized
+     */
+    static $state = false;
+    
+    
+    /**
      * Start session
      */
     public static function init()
     {
+        if(!self::getState()) {
+            self::start();
+        }
+    }
+    
+    public static function start()
+    {
         session_start();
+        self::setState(true);
+    }
+    
+    /**
+     * Set state
+     * 
+     * @param bool $state
+     */
+    public static function setState($state)
+    {
+        self::$state = $state;
+    }
+    
+    /**
+     * Get state
+     * 
+     * @return self::state
+     */
+    public static function getState()
+    {
+        return self::$state;
     }
     
     /**
@@ -42,6 +76,7 @@ class Session
         {
             unset($_SESSION[$v]);
         }
+        self::setState(false);
         session_destroy();
     }
     
