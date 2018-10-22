@@ -27,8 +27,8 @@ class CsrfToken
             Session::init();
         }
         
-        if(is_null($session->get('_ex_csrf'))) {
-            $session->build('_ex_csrf', bin2hex(random_bytes(32)));
+        if(is_null($this->session->get('_ex_csrf'))) {
+            $this->session->build('_ex_csrf', bin2hex(random_bytes(32)));
         }
 
     }
@@ -42,7 +42,7 @@ class CsrfToken
      */
     public function match($token)
     {
-        if($token === $session->get('_ex_csrf')) {
+        if($token === $this->session->get('_ex_csrf')) {
             return true;
         }
         return false;
