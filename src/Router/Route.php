@@ -70,6 +70,14 @@ class Route
      */
     public function call()
     {
+        if(is_string($this->callback)) {
+            $item = explode('@', $this->callback);
+            $object = 'App\\Controller\\' . $item[0];
+            
+            $object = new $object();
+            
+            return call_user_func_array([$controller, $item[1]], $this->params);
+        }
         return call_user_func_array($this->callback, $this->params);
     }
     

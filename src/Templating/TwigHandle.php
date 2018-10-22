@@ -9,9 +9,6 @@ class TwigHandle
 {
     
     /**
-     * 
-    
-    /**
      * Create twig template handler
      * 
      * @return class
@@ -28,7 +25,7 @@ class TwigHandle
         }
         
         $loader = new \Twig_Loader_Filesystem($_SERVER['DOCUMENT_ROOT'] . '/resources/views/');
-        $twig = new \Twig_Environment($loader);
+        $twig = new \Twig_Environment($loader, ['cache' => $_SERVER['DOCUMENT_ROOT'] . '/resources/cache/']);
         
         $function = new \Twig_SimpleFunction('get_csrf', function() {
             $session = new \App\Session\Session();

@@ -15,6 +15,11 @@ class Router
     private static $url;
     
     /**
+     * Variable for named routes
+     */
+    public static $names = [];
+    
+    /**
      * Table of defined routes
      * 
      * @var array $routes
@@ -38,8 +43,11 @@ class Router
      * 
      * @return function
      */
-    public static function get($path, $callback, $params = [])
+    public static function get($path, $callback, $params = [], $name = false)
     {
+        if($name) {
+            static::$names['get'][$name] = $path;
+        }
         return self::add($path, $callback, $params, 'GET');
     }
     
@@ -52,8 +60,11 @@ class Router
      * 
      * @return function
      */
-    public static function post($path, $callback, $params = [])
+    public static function post($path, $callback, $params = [], $name = false)
     {
+        if($name) {
+            static::$names['post'][$name] = $path;
+        }
         return self::add($path, $callback, $params, 'POST');
     }
     
@@ -88,6 +99,14 @@ class Router
                 return $route->call();
             }
         }
+    }
+    
+    public static function getUrl($method, $name)
+    {
+        if(isset(static::$names[$method][$name])) {
+            return static::$names[$method][$name];
+        }
+        return false;
     }
     
 }

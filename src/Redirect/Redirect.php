@@ -37,6 +37,7 @@ class Redirect
         }else{
             throw new RedirectException("URL not defined at setter");
         }
+        return $this;
     }
     /**
      * Run redirect to url
