@@ -107,10 +107,10 @@ class Session
      */
     public function set()
     {
-        if(isset($_SESSION[$this->name])) {
+        if(isset($_SESSION[$this->encrypt->encrypt($this->name)])) {
             throw new SessionException("This session variable already exists");
         }
-        $_SESSION[$this->encrypt->encrypt($this->name, true)] = $this->encrypt->encrypt($this->content, true);
+        $_SESSION[$this->encrypt->encrypt($this->name, true)] = $this->content;
     }
     
     /**

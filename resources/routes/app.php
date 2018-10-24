@@ -45,11 +45,8 @@ $router::init();
 |
 */
 $router::get('/', function() {
-    view('header', []);
-    view('home', ['name' => 'Grecko']);
+    view('home' ['title' => 'Squared']I);
 }, [], 'home');
-
-$router::post('/text', function() {}, [], 'text');
 
 /*
 +-------------------------------------------------------------------------------
