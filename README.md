@@ -1,5 +1,7 @@
 # Squared PHP Framework
 
+**Notice: This framework is in a BETA phase.
+
 We've made a nice box (squared) with all sorts of awesome stuff you need to get started. Now it's your turn to think outside of this squared box and build something beautiful.
 
 Squared is a simple, yet beautiful PHP framework. It comes with a bunch of different tools to get started. (We've included a full list a bit further down in this text) With Squared you don't have to spend your time building routes, viewers, cookies and sessions (and alot more) but instead you can just jump straight into your project and build something awesome without having to build your own routers and viewers.
