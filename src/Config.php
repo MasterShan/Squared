@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Squared;
 
 final class Config
 {

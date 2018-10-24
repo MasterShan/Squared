@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Session;
+namespace Squared\Session;
 
 class SessionException extends \Exception
 {

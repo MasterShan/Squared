@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Database;
+namespace Squared\Database;
 
 class DatabaseException extends \Exception
 {

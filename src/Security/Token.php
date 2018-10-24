@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Security;
+namespace Squared\Security;
 
 class Token
 {

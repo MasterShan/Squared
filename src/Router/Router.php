@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Router;
+namespace Squared\Router;
 
-use App\Router\Route;
+use Squared\Router\Route;
 
 class Router
 {

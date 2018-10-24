@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Database;
+namespace Squared\Database;
 
 use \PDO;
 use \PDOException;
-use App\Config;
+use Squared\Config;
 
 class Database
 {
