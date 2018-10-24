@@ -45,7 +45,7 @@ $router::init();
 |
 */
 $router::get('/', function() {
-    view('home' ['title' => 'Squared']I);
+    view('home', ['title' => 'Squared']);
 }, [], 'home');
 
 /*
