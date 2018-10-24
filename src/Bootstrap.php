@@ -1,10 +1,10 @@
 <?php
 
-namespace App;
+namespace Squared;
 
-use App\Security\CsrfToken;
-use App\Session\Session;
-use App\Redirect\Redirect;
+use Squared\Security\CsrfToken;
+use Squared\Session\Session;
+use Squared\Redirect\Redirect;
 
 class Bootstrap
 {

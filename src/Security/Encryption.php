@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Security;
+namespace Squared\Security;
 
-use App\Config;
+use Squared\Config;
 
 class Encryption
 {

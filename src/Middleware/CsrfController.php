@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Middleware;
+namespace Squared\Middleware;
 
-use App\Middleware\Controller as Middleware;
+use Squared\Middleware\Controller as Middleware;
 
 class CsrfController extends Middleware
 {

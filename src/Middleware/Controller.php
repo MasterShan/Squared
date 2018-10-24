@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Middleware;
+namespace Squared\Middleware;
 
 class Controller
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Security;
+namespace Squared\Security;
 
-use App\Session\Session;
-use App\Config;
+use Squared\Session\Session;
+use Squared\Config;
 
 class CsrfToken
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Session;
+namespace Squared\Session;
 
-use App\Session\SessionException;
-use App\Security\Encryption;
+use Squared\Session\SessionException;
+use Squared\Security\Encryption;
 
 class Session
 {

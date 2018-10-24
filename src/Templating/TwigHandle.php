@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Templating;
+namespace Squared\Templating;
 
-use App\Session\Session;
+use Squared\Session\Session;
 
 
 class TwigHandle

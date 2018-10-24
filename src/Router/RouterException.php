@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Router;
+namespace Squared\Router;
 
 class RouterException extends \Exception
 {

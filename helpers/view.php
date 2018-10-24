@@ -6,7 +6,7 @@
 if(!function_exists('view')) {
     function view($name, $data = [], $use_twig = true) {
         if($use_twig) {
-            $twig = App\Templating\TwigHandle::get()->render($name . '.php', $data);
+            $twig = Squared\Templating\TwigHandle::get()->render($name . '.php', $data);
 		    echo $twig;
         }else{
             extract($data);
