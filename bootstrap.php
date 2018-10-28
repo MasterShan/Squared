@@ -1,7 +1,4 @@
 <?php
-
-use Squared\Bootstrap;
-
 /*
 +-------------------------------------------------------------------------------
 | Return bootstrapper
@@ -10,4 +7,4 @@ use Squared\Bootstrap;
 | Return our bootstrapper to the index file.
 |
 */
-return $app = new Bootstrap();
+return $app = new Squared\Bootstrap();
