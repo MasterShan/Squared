@@ -28,7 +28,7 @@ class CsrfToken
         }
         
         if(is_null($this->session->get('_ex_csrf'))) {
-            $this->session->build('_ex_csrf', bin2hex(random_bytes(32)));
+            $this->session->build('_ex_csrf', self::make());
         }
 
     }
@@ -46,6 +46,16 @@ class CsrfToken
             return true;
         }
         return false;
+    }
+    
+    /**
+     * Create new token
+     *
+     * @return token
+     */
+    public static function make()
+    {
+        return bin2hex(random_bytes(32));
     }
     
 }

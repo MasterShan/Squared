@@ -43,7 +43,7 @@ class Router
      * 
      * @return function
      */
-    public static function get($path, $callback, $params = [], $name = false)
+    public static function get($path, $callback, $name = false, $params = [])
     {
         if($name) {
             static::$names['get'][$name] = $path;
@@ -60,7 +60,7 @@ class Router
      * 
      * @return function
      */
-    public static function post($path, $callback, $params = [], $name = false)
+    public static function post($path, $callback, $name = false, $params = [])
     {
         if($name) {
             static::$names['post'][$name] = $path;
