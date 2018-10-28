@@ -13,7 +13,7 @@ This project uses Composer for autoloading and dependency management. Visit http
 
 ## Installation
 
-To install Squared, either git clone or download this repository.
+To install Squared, either git clone or download this repository and run `composer install`
 
 ## List of features
 
