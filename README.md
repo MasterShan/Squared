@@ -10,12 +10,15 @@ The framework is based on the Model-View-Controller pattern. You can build your 
 
 This project uses Composer for autoloading and dependency management. Visit https://getcomposer.org for more information about Composer.
 
+## Installation
+
+To install Squared, either git clone or download this repository.
+
 ## List of features
 
 - URL Router
 - Template viewing with Twig
 - Encryption
-- CurlWrapper by [svyatov](https://github.com/svyatov)
 - A PDO database wrapper
 - Session and cookie handling
 - Redirecting and headers
