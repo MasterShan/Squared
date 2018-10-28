@@ -1,6 +1,7 @@
 # Squared PHP Framework
 
 **Notice: This framework is in a BETA phase.**
+**Notice: The webpage is currently not done.**
 
 We've made a nice box (squared) with all sorts of awesome stuff you need to get started. Now it's your turn to think outside of this squared box and build something beautiful.
 
