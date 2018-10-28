@@ -4,15 +4,19 @@ namespace Squared;
 
 final class Config
 {
+	/**
+	 * Class for constants
+	 * This is fairly empty because we set everything else dynamically.
+	 */
     
-    /* Database */
+    /* Database Credentials*/
     const SERVER = "localhost";
     const DATABASE = "";
     const USERNAME = "";
     const PASSWORD = "";
     
-    /* Encryption */
-    const CIPHER = "mysecretcipher";
+    /* Encryption cipher (passphrase) */
+    const CIPHER = "";
     
 }
 

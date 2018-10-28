@@ -15,11 +15,14 @@ class Redirect
      * 
      * @param string|bool $url
      */
-    public function __construct($url = false) 
+    public function __construct($url = false, $query = false) 
     {
         if($url) {
-           $this->url = $url;
-           $this->run();
+            $this->url = $url;
+            if($query) {
+                $this->parameters($query);
+                $this->run();
+            }
         }else{
             $this->url = null;
         }
@@ -29,6 +32,8 @@ class Redirect
      * Set the URL if it wasn't set in the constructor
      * 
      * @param string $url
+     * 
+     * @return this
      */
     public function setUrl($url = null) 
     {
@@ -39,6 +44,24 @@ class Redirect
         }
         return $this;
     }
+    
+    /**
+     * Add query parameters for GET requests
+     * 
+     * @param array|object $query
+     * 
+     * @return this
+     */
+    public function parameters($query)
+    {
+        if(!is_null($this->url)) {
+            $this->url .= '?' . http_build_query($query);
+        }else{
+            throw new RedirectException("URL not defined at parameter builder");
+        }
+        return $this;
+    }
+    
     /**
      * Run redirect to url
      */

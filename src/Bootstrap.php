@@ -35,10 +35,6 @@ class Bootstrap
     public $session;
     
     /**
-     * @var redirect
-     */
-    
-    /**
      * Create and import instances of classes
      */
     public function __construct()
@@ -46,7 +42,6 @@ class Bootstrap
         $this->router  = require $_SERVER['DOCUMENT_ROOT'] . "/resources/routes/app.php";
         $this->csrf = new CsrfToken();
         $this->session = new Session();
-        $this->redirect = new Redirect();
     }
     
 }
